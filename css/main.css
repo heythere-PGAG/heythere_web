@@ -1,0 +1,381 @@
+
+@-webkit-keyframes circle {
+    0%,
+    100% {
+        -webkit-transform: rotateY(0);
+        -webkit-animation-timing-function: ease-in
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+        -webkit-animation-timing-function: ease-out
+    }
+}
+
+@-moz-keyframes circle {
+    0% {
+        -moz-transform: rotateY(0)
+    }
+    50% {
+        -moz-transform: rotateY(180deg);
+        -moz-animation-timing-function: ease-out
+    }
+    100% {
+        -moz-transform: rotateY(0);
+        -moz-animation-timing-function: ease-in
+    }
+}
+
+@-ms-keyframes circle {
+    0%,
+    100% {
+        -ms-transform: rotateY(0);
+        -ms-animation-timing-function: ease-in
+    }
+    50% {
+        -ms-transform: rotateY(180deg);
+        -ms-animation-timing-function: ease-out
+    }
+}
+
+@-o-keyframes circle {
+    0%,
+    100% {
+        -o-transform: rotateY(0);
+        -o-animation-timing-function: ease-in
+    }
+    50% {
+        -o-transform: rotateY(180deg);
+        -o-animation-timing-function: ease-out
+    }
+}
+
+@keyframes circle {
+    0%,
+    100% {
+        transform: rotateY(0);
+        animation-timing-function: ease-in
+    }
+    50% {
+        transform: rotateY(180deg);
+        animation-timing-function: ease-out
+    }
+}
+
+.isotope-item {
+    z-index: 2
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1
+}
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: .8s;
+    -moz-transition-duration: .8s;
+    -ms-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity
+}
+
+.isotope .isotope-item.no-transition,
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s
+}
+
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
+.u-posRelative {
+    position: relative!important
+}
+
+.u-size11of12 {
+    width: calc(100% * 11/12)!important
+}
+
+@media (min-width:320px) and (max-width:640px) {
+    .u-sm-size11of12 {
+        width: calc(100% * 11/12)!important
+    }
+}
+
+@media (min-width:640px) and (max-width:960px) {
+    .u-md-size8of12 {
+        width: calc(100% * 2/3)!important
+    }
+}
+
+.u-textCenter {
+    text-align: center!important
+}
+
+.u-mt {
+    margin-top: 24px!important
+}
+
+.u-mt\+ {
+    margin-top: 48px!important
+}
+
+.u-mb\+ {
+    margin-bottom: 48px!important
+}
+
+.u-pt\+ {
+    padding-top: 48px!important
+}
+
+@media (min-width:640px) and (max-width:959px) {
+    .u-md-mb {
+        margin-bottom: 24px!important
+    }
+}
+
+@media (min-width:960px) {
+    .u-lg-size2of3 {
+        width: calc(100% * 2/3)!important
+    }
+    .u-lg-pt\+\+ {
+        padding-top: 96px!important
+    }
+}
+
+.Grid,
+.Grid-cell {
+    margin: 0;
+    padding: 0
+}
+
+.u-isHidden {
+    display: none!important;
+    visibility: hidden!important
+}
+
+.Grid {
+    display: block;
+    font-size: 0;
+    text-align: left
+}
+
+.Grid--alignCenter {
+    text-align: center
+}
+
+.Grid-cell {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    line-height: 24px
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1
+}
+
+.Showroom-hand,
+.Showroom-item1,
+.Showroom-item2,
+.Showroom-tv,
+.owl-next {
+    position: absolute
+}
+
+.owl-carousel .owl-controls .owl-dot,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.owl-next {
+    width: 32px;
+    height: 63px;
+    display: inline-block;
+    text-indent: -99999px;
+    z-index: 20;
+    cursor: pointer;
+    background: url(assets/gfx/temp/arrow-right.3fe0284e.png) 50% 50% no-repeat;
+    top: 40%;
+    left: 100%;
+    margin-left: -150px
+}
+
+.Applications .owl-controls,
+.owl-prev {
+    display: none
+}
+
+.owl-next:hover {
+    opacity: .8
+}
+
+@media screen and (min-width:960px) {
+    .Applications .owl-controls {
+        display: block
+    }
+}
+
+.SvgSprite {
+    fill: currentColor
+}
+
+.InnerWrapper {
+    max-width: 1180px;
+    margin: 0 auto
+}
+
+.BeaconsInAction {
+    background-color: #c3c00f;
+    color: #232124;
+    overflow: hidden
+}
+
+.Showroom-map,
+.Showroom-map--mask {
+    width: 100%;
+    height: 608px
+}
+
+.Showroom-map--mask {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.Showroom-hand {
+    width: 480px;
+    height: 753px;
+    top: 140px;
+    right: -270px;
+    display: none
+}
+
+.Showroom-tv {
+    display: none;
+    top: 127px;
+    right: 466px
+}
+
+.Showroom-item1 {
+    display: none;
+    top: 232px;
+    right: 641px;
+    width: 16px;
+    height: 16px
+}
+
+.Showroom-item2 {
+    display: none;
+    top: 183px;
+    right: 250px;
+    height: 30px;
+    width: 34px
+}
+
+.Applications {
+    position: relative
+}
+
+.Applications-item {
+    padding: 30px 18% 30px 1%
+}
+
+.Applications-bgItem {
+    position: absolute;
+    width: 212px;
+    left: 69%;
+    top: 0;
+    z-index: 10
+}
+
+@media screen and (min-width:640px) {
+    .Applications-item {
+        padding: 0 20% 20px 10%
+    }
+    .Applications-bgItem {
+        width: 350px;
+        left: 77%
+    }
+}
+
+@media screen and (min-width:960px) {
+    .Applications-item {
+        padding: 0 330px 0 220px
+    }
+    .Applications-bgItem {
+        left: calc(100% - 400px);
+        bottom: -145px
+    }
+}
+
+.Showroom-mapWrapper {
+    position: relative;
+    width: 1110px;
+    margin: 0 auto
+}
+
+.Showroom-subject {
+    position: absolute;
+    top: 100px;
+    left: 0
+}
+
+.Showroom-map {
+    background-size: cover
+}
+
+.Showroom-mapFront {
+    position: absolute;
+    top: 121px;
+    left: 2px
+}
+
+.Showroom-bgHand {
+    position: absolute;
+    right: 18px;
+    top: 203px;
+    z-index: 10;
+    display: none
+}
+
+.Showroom-bgHand.isActive {
+    z-index: 11
+}
